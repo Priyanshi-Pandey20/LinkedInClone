@@ -1,0 +1,70 @@
+.allUserProfile{
+ max-width: 80%;
+
+ display: flex;
+ flex-direction: column;
+ gap: 1.2rem;
+}
+
+.userCard{
+    display: flex;
+    gap: 1.2rem;.allUserProfile {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Card */
+.userCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+}
+
+.userCard:hover {
+  transform: translateY(-2px);
+}
+
+/* Image */
+.userCard__image {
+  width: 50px;          /* FIXED size instead of % */
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Text container */
+.userCard__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.userCard__name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.userCard__username {
+  font-size: 0.9rem;
+  color: gray;
+}
+    cursor: pointer;
+    padding: 1.3rem;
+    align-items: center;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.1);
+    
+}
+.userCard__image{
+    width: 10%;
+    border-radius: 50%;
+
+}
+
