@@ -1,0 +1,58 @@
+POST http://localhost:9090/register
+Content-Type: application/json
+
+{
+  "username": "tina45",
+  "password": "123456",
+  "email": "tina@gmail.com",
+  "name": "Tina"
+}
+
+###
+
+POST http://localhost:9090/login
+Content-Type: application/json
+
+{
+  "email": "tina@gmail.com",
+  "password": "123456"
+}
+
+###
+
+GET http://localhost:9090/get_user_and_profile
+Content-Type: application/json
+{
+  "token":"2264f6789db0388655f2b3b8784c85bd5a03754a496aedf47eefde95ffd8313a"
+}
+
+
+###
+
+POST http://localhost:9090/update_profile_data
+Content-Type: application/json
+
+{
+  "token":"2264f6789db0388655f2b3b8784c85bd5a03754a496aedf47eefde95ffd8313a",
+  "bio":"Hi am Tina. CEO in Google and Ex-Amazon Marketing Manager",
+  "currentPost":"CTO",
+  "pastWork":[
+    {
+      "company":"Google",
+      "position":"CTO",
+      "years":"3+"
+    }
+  ],
+  "education":[
+    {
+      "school":"IIT",
+      "degree":"B.Tech in CSE",
+      "fieldOfStudy":"2015-2017"
+    }
+  ]
+}
+
+
+###
+GET http://localhost:9090/user/get_all_users
+
